@@ -20,13 +20,13 @@ public class ShipwreckStub {
 		Shipwreck c = new Shipwreck(3L, "S.S. Yongala", "A luxury passenger ship wrecked on the great barrier reef", "FAIR", 50, 44.12, 138.44, 1994);
 		wrecks.put(3L, c);
 		Shipwreck d = new Shipwreck(3L, "HMS Basilisk", "A B-class destroyer that was sunk by German bombers off Koksijde.", "GOOD", 20, 15.12, 128.44, 2010);
-		wrecks.put(3L, d);
+		wrecks.put(4L, d);
 //		Shipwreck e = new Shipwreck(3L, "USS Discovery", "A luxury passenger ship wrecked on the great barrier reef", "FAIR", 46, 23.12, 138.44, 2005);
-//		wrecks.put(3L, e);
+//		wrecks.put(5L, e);
 //		Shipwreck f = new Shipwreck(3L, "SMS Seeadler", "A Type IIB U-boat that was scuttled at Wilhelmshaven.", "FAIR", 30, 56.12, 188.44, 1991);
-//		wrecks.put(3L, f);
+//		wrecks.put(6L, f);
 //		Shipwreck g = new Shipwreck(3L, "HMS Niger", "A Halcyon-class minesweeper that was sunk by a mine off the Westfjords.", "GOOD", 15, 56.99, 141.14, 1942);
-//		wrecks.put(3L, g);
+//		wrecks.put(7L, g);
 	}
 
 	public static List<Shipwreck> list() {
