@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.arttech.demo</groupId>
+	<artifactId>shipwreck-demo</artifactId>
+	<version>1.0.1</version>
+	<packaging>jar</packaging>
+
+	<name>Shipwrecks Demo</name>
+	<description>Demo project for Microservice MVC and Spring Boot/Docker</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.1.RELEASE</version>
+		<relativePath />
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<docker.image.prefix>arbot</docker.image.prefix>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>shipwreck</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-junit47</artifactId>
+						<version>2.21.0</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<!-- <plugin> -->
+			<!-- <groupId>com.spotify</groupId> -->
+			<!-- <artifactId>dockerfile-maven-plugin</artifactId> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <id>default</id> -->
+			<!-- <phase>package</phase> -->
+			<!-- <goals> -->
+			<!-- <goal>build</goal> -->
+			<!-- <goal>push</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- <configuration> -->
+			<!-- <serverId>docker-hub</serverId> -->
+			<!-- <registryUrl>https://registry.hub.docker.com/v1/</registryUrl> -->
+			<!-- <repository>dcruzarttech/${artifactId}</repository> -->
+			<!-- <forceTags>true</forceTags> -->
+			<!-- <tag>${project.version}</tag> -->
+			<!-- <useMavenSettingsForAuth>true</useMavenSettingsForAuth> -->
+			<!-- <buildArgs> -->
+			<!-- <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE> -->
+			<!-- </buildArgs> -->
+			<!-- </configuration> -->
+			<!-- </plugin> -->
+		</plugins>
+	</build>
+</project>

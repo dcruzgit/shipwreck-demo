@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Shipwrecks Demo
+Implementation-Version: 1.0.1
+Built-By: dcruz
+Implementation-Vendor-Id: com.arttech.demo
+Build-Jdk: 1.8.0_77
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/shipwreck-demo
+Created-By: Maven Integration for Eclipse
+
